@@ -24,6 +24,8 @@ int main()
         cin>>arr[i];
 	cout<<"Enter the element to be searched:\n";
 	cin>>x;
-	cout<<"Element found at Position(if not found then -1):\n"<<linear_search(arr,n,x);
+	int result = linear_search(arr,n,x);
+	(result == -1)? cout<<"Element is not present in array"
+                 : cout<<"Element is present at index:\n"<<result;
 	return 0;
 }
