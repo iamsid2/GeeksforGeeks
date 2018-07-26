@@ -6,9 +6,9 @@ def Bubble_Sort(arr,n):
 	print("The array after Bubble_Sort becomes")
 	for i in range(n):
 		print(arr[i], end=' ')
+	#rint(int(i) for i in arr)
 
 print("Enter the array elements")
 arr = input().split(' ')
 arr = [int(i) for i in arr]
-n = len(arr)
-Bubble_Sort(arr, n)
+Bubble_Sort(arr, len(arr))
